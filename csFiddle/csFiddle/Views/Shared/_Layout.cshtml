@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - csFiddle</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />        
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />        
+        @Styles.Render("~/Content/themes/base/css")
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        @Scripts.Render("~/Scripts")
+        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/Content/css")
+    </head>    
+        
+    <body>        
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@*<img src= "@Url.Content("~/Content/Logo.jpg")" alt="IMAGES" />*@</p>
+                </div>
+                <div class="float-right">
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                           @* <li>@Html.ActionLink("Documentation", "Index", "Documentation")</li>*@
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    
+                </div>
+            </div>
+        </footer>        
+    </body>
+    
+    @RenderSection("scripts", required: false)
+</html>
