@@ -1,0 +1,9 @@
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\obj\Debug\csFiddle.BL.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\bin\Debug\csFiddle.BL.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\bin\Debug\csFiddle.BL.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\bin\Debug\csFiddle.Interfaces.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\bin\Debug\csFiddle.Interfaces.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\obj\Debug\csFiddle.BL.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\obj\Debug\csFiddle.BL.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\bin\Debug\csFiddle.CustomCompiler.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.BL\bin\Debug\csFiddle.CustomCompiler.pdb

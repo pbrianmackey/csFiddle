@@ -66,3 +66,9 @@ C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\DotNet
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\obj\Debug\csFiddleTests.csprojResolveAssemblyReference.cache
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\obj\Debug\csFiddleTests.dll
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\obj\Debug\csFiddleTests.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.BL.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.Interfaces.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.CustomCompiler.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.BL.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.Interfaces.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.CustomCompiler.pdb

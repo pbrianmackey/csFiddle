@@ -1,0 +1,5 @@
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.CustomCompiler\bin\Debug\csFiddle.CustomCompiler.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.CustomCompiler\bin\Debug\csFiddle.CustomCompiler.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.CustomCompiler\obj\Debug\csFiddle.CustomCompiler.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.CustomCompiler\obj\Debug\csFiddle.CustomCompiler.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.CustomCompiler\obj\Debug\csFiddle.CustomCompiler.pdb

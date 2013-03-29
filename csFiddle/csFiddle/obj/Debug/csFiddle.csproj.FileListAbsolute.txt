@@ -96,3 +96,9 @@ C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\DotNetOpenAuth.Op
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\obj\Debug\csFiddle.csprojResolveAssemblyReference.cache
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\obj\Debug\csFiddle.dll
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\obj\Debug\csFiddle.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\csFiddle.BL.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\csFiddle.Interfaces.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\csFiddle.CustomCompiler.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\csFiddle.BL.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\csFiddle.Interfaces.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\bin\csFiddle.CustomCompiler.pdb

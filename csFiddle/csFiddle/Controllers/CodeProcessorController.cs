@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using csFiddle.BL;
+using csFiddle.MsBuildLauncher;
 
 namespace csFiddle.Controllers
 {
@@ -27,8 +28,11 @@ namespace csFiddle.Controllers
         public string Post([FromBody]string codeToProcess)
         {
             var cc = new CodeGenerator();
-            var projectPath = cc.GenerateCodeFile(codeToProcess);
-            string output = MSBuildHelper.Build(projectPath);
+            AppdomainHelper newAppDomain = new AppdomainHelper(System.Web.HttpContext.Current.Request.ApplicationPath);
+
+            string rootprojectname = cc.GenerateCodeFile(codeToProcess);
+            var projectPathAndFileName = Path.Combine(rootprojectname, CodeTemplateProjectInfo.PROJECTNAME);
+            string output = newAppDomain.LoadIntoAppDomain(projectPathAndFileName, rootprojectname);
             
             return output;
         }

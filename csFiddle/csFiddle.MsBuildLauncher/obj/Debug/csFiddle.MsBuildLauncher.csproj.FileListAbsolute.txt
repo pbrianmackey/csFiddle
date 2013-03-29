@@ -1,0 +1,6 @@
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.MsBuildLauncher\obj\Debug\csFiddle.MsBuildLauncher.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.MsBuildLauncher\bin\Debug\csFiddle.MsBuildLauncher.exe.config
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.MsBuildLauncher\bin\Debug\csFiddle.MsBuildLauncher.exe
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.MsBuildLauncher\bin\Debug\csFiddle.MsBuildLauncher.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.MsBuildLauncher\obj\Debug\csFiddle.MsBuildLauncher.exe
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.MsBuildLauncher\obj\Debug\csFiddle.MsBuildLauncher.pdb

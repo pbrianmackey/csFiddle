@@ -55,6 +55,14 @@
     <Compile Include="GeneralTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\csFiddle.BL\csFiddle.BL.csproj">
+      <Project>{733ca008-4fb6-4036-8956-61727eac4a6a}</Project>
+      <Name>csFiddle.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csFiddle.Interfaces\csFiddle.Interfaces.csproj">
+      <Project>{429fe5e5-5fbd-4a19-a7ed-bd82c3d87799}</Project>
+      <Name>csFiddle.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\csFiddle\csFiddle.csproj">
       <Project>{1a378f2c-1cd1-4a6e-9463-15438c973fc8}</Project>
       <Name>csFiddle</Name>

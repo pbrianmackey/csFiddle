@@ -1,0 +1,5 @@
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\bin\Debug\csFiddle.Interfaces.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\bin\Debug\csFiddle.Interfaces.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.csprojResolveAssemblyReference.cache
