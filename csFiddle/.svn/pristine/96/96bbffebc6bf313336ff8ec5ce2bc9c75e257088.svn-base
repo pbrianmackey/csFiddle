@@ -26,9 +26,9 @@
                 context: document.body,
                 type: "POST",
                 data: code
-            }).done(function (data) {
-                //alert(data);
-                $('#compilerOutput').text(data);
+            }).done(function () {
+                alert('done');
+                $(this).addClass("done");
             });
         });        
     });
@@ -47,25 +47,5 @@
     </section>
 }
 
-<pre><code id="compilerOutput" style="word-wrap: break-word;"></code></pre>
-
 <button id="compiler">Compile</button>
-<textarea id="userCode">
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectTemplate
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World");
-        }
-    }
-}
-</textarea>
-
+<textarea id="userCode"></textarea>

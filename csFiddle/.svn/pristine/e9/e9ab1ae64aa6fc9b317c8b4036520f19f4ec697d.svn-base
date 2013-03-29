@@ -161,10 +161,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="BL\CodeCRUD.cs" />
-    <Compile Include="BL\FileSystemHelper.cs" />
     <Compile Include="BL\MSBuildHelper.cs" />
-    <Compile Include="BL\PathFinder.cs" />
     <Compile Include="BL\RegistryPathLocator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CodeProcessorController.cs" />

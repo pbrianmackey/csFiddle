@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using csFiddle.BL;
 
 namespace csFiddle.Controllers
 {
@@ -23,15 +24,13 @@ namespace csFiddle.Controllers
         }
 
         // POST api/codeprocessor
-        public void Post([FromBody]string codeToProcess)
+        public string Post([FromBody]string codeToProcess)
         {
-            string uniqueFileName = Guid.NewGuid() + ".cs";
-            string uniquePath = Path.Combine("\temp", uniqueFileName);
-            using (FileStream fs = File.Create(uniquePath))
-            using(var sw = new StreamWriter(fs))
-            {
-                sw.Write(codeToProcess);
-            }
+            var cc = new CodeGenerator();
+            var projectPath = cc.GenerateCodeFile(codeToProcess);
+            string output = MSBuildHelper.Build(projectPath);
+            
+            return output;
         }
 
         // PUT api/codeprocessor/5
