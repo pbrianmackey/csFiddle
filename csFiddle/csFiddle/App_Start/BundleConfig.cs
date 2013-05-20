@@ -18,14 +18,6 @@ namespace csFiddle
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/Scripts").Include(
-                        //"~/Scripts/bootstrap.js",
-                        "~/Scripts/XRegExp.js",
-                        "~/Scripts/shCore.js",
-                        "~/Scripts/shBrushCSharp.js",
-                        "~/Scripts/BaylorScripts/CustomSyntaxHighlighter.js"
-                        ));
-
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -34,7 +26,6 @@ namespace csFiddle
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
-                        "~/Content/themes/base/jquery.ui.css",
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",
                         "~/Content/themes/base/jquery.ui.selectable.css",
