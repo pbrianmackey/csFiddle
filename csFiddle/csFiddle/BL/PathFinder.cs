@@ -6,12 +6,12 @@ using System.Web;
 
 namespace csFiddle.BL
 {
-    public static class CodeTemplateProjectInfo
-    {
-        public const string THISPROJECTTEMPPATH = @"C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp";//TODO: Make this a relative path
-        public const string PROJECTPATH = @"C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate";//TODO: Make this a relative path from this directory
-        public const string PROJECTNAME = @"ProjectTemplate.csproj";
-    }
+    //public static class CodeTemplateProjectInfo
+    //{
+    //    public const string THISPROJECTTEMPPATH = @"C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp";//TODO: Make this a relative path
+    //    public const string PROJECTPATH = @"C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate";//TODO: Make this a relative path from this directory
+    //    public const string PROJECTNAME = @"ProjectTemplate.csproj";
+    //}
     static class RegistryPaths
     {
         internal const string DOTNETFOURPATH = @"Software\Microsoft\MSBuild\4.0";

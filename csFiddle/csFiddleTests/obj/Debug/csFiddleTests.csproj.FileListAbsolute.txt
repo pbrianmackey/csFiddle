@@ -72,3 +72,13 @@ C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFidd
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.BL.pdb
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.Interfaces.pdb
 C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.CustomCompiler.pdb
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.BL.dll
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.Interfaces.dll
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.CustomCompiler.dll
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\Roslyn.Compilers.CSharp.dll
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\Roslyn.Compilers.dll
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.BL.pdb
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.Interfaces.pdb
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.CustomCompiler.pdb
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\Roslyn.Compilers.CSharp.xml
+C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\Roslyn.Compilers.xml
