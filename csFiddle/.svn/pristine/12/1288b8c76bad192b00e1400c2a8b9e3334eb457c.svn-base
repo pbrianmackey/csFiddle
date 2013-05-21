@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>    
+    $(function () {
+        $('textarea')
+            .css({
+                'font': 'inherit',
+                'color': 'inherit',
+                'text-align': 'inherit',
+                'outline': 'none',
+                'cursor': 'text',
+                'width': '72em',
+                'height': '50em'
+            });
+
+        $('button, a').button();
+
+        //Consider running this server side.  Or, using Roslyn compiler
+        $('#compiler').click(function() {
+            var code = '=' + $('#userCode').val();
+            //api/codeprocessor
+            $.ajax({
+                url: "api/codeprocessor",
+                context: document.body,
+                type: "POST",
+                data: code
+            }).done(function (data) {
+                //alert(data);
+                $('#compilerOutput').text(data);
+            });
+        });        
+    });
+</script>
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>csFiddle</h1>
+            </hgroup>
+            <p>
+                Quickly share and tinker C#
+            </p>
+        </div>
+    </section>
+}
+
+<pre><code id="compilerOutput" style="word-wrap: break-word;"></code></pre>
+
+<button id="compiler">Compile</button>
+<textarea id="userCode">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProjectTemplate
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+        }
+    }
+}
+</textarea>
+

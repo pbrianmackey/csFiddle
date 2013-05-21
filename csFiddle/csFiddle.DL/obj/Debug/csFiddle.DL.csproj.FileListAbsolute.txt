@@ -1,0 +1,4 @@
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.DL\bin\Debug\csFiddle.DL.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.DL\bin\Debug\csFiddle.DL.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.DL\obj\Debug\csFiddle.DL.dll
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle.DL\obj\Debug\csFiddle.DL.pdb

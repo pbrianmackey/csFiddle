@@ -277,6 +277,20 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\csFiddle.BL\csFiddle.BL.csproj">
+      <Project>{733ca008-4fb6-4036-8956-61727eac4a6a}</Project>
+      <Name>csFiddle.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csFiddle.CustomCompiler\csFiddle.CustomCompiler.csproj">
+      <Project>{e268b1bf-f9a3-4c77-a3c9-85e278800950}</Project>
+      <Name>csFiddle.CustomCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csFiddle.Interfaces\csFiddle.Interfaces.csproj">
+      <Project>{429fe5e5-5fbd-4a19-a7ed-bd82c3d87799}</Project>
+      <Name>csFiddle.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
