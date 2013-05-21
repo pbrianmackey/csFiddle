@@ -1,0 +1,12 @@
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\bin\Debug\ProjectTemplate.exe.config
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\bin\Debug\ProjectTemplate.exe
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\bin\Debug\ProjectTemplate.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.exe
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp\5f68802e-8ad0-47d5-92a3-1995d0a4e62c\bin\Debug\ProjectTemplate.exe.config
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp\5f68802e-8ad0-47d5-92a3-1995d0a4e62c\bin\Debug\ProjectTemplate.exe
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp\5f68802e-8ad0-47d5-92a3-1995d0a4e62c\bin\Debug\ProjectTemplate.pdb
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp\5f68802e-8ad0-47d5-92a3-1995d0a4e62c\obj\Debug\ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp\5f68802e-8ad0-47d5-92a3-1995d0a4e62c\obj\Debug\ProjectTemplate.exe
+C:\Users\Brian\Documents\GitHub\csFiddle\csFiddle\csFiddle\temp\5f68802e-8ad0-47d5-92a3-1995d0a4e62c\obj\Debug\ProjectTemplate.pdb
