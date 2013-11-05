@@ -10,3 +10,9 @@ C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\bin\Debug\Pro
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.csprojResolveAssemblyReference.cache
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.exe
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.pdb
+C:\Git\csFid\csFiddle\ProjectTemplate\bin\Debug\ProjectTemplate.exe.config
+C:\Git\csFid\csFiddle\ProjectTemplate\bin\Debug\ProjectTemplate.exe
+C:\Git\csFid\csFiddle\ProjectTemplate\bin\Debug\ProjectTemplate.pdb
+C:\Git\csFid\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\Git\csFid\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.exe
+C:\Git\csFid\csFiddle\ProjectTemplate\obj\Debug\ProjectTemplate.pdb

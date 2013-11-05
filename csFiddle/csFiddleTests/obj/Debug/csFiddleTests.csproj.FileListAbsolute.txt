@@ -82,3 +82,6 @@ C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFid
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\csFiddle.CustomCompiler.pdb
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\Roslyn.Compilers.CSharp.xml
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddleTests\bin\Debug\Roslyn.Compilers.xml
+C:\Git\csFid\csFiddle\csFiddleTests\obj\Debug\csFiddleTests.csprojResolveAssemblyReference.cache
+C:\Git\csFid\csFiddle\csFiddleTests\obj\Debug\csFiddleTests.dll
+C:\Git\csFid\csFiddle\csFiddleTests\obj\Debug\csFiddleTests.pdb

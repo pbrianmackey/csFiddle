@@ -1,0 +1,5 @@
+C:\Git\csFid\csFiddle\csFiddle.CustomCompiler\bin\Release\csFiddle.CustomCompiler.dll
+C:\Git\csFid\csFiddle\csFiddle.CustomCompiler\bin\Release\csFiddle.CustomCompiler.pdb
+C:\Git\csFid\csFiddle\csFiddle.CustomCompiler\obj\Release\csFiddle.CustomCompiler.csprojResolveAssemblyReference.cache
+C:\Git\csFid\csFiddle\csFiddle.CustomCompiler\obj\Release\csFiddle.CustomCompiler.dll
+C:\Git\csFid\csFiddle\csFiddle.CustomCompiler\obj\Release\csFiddle.CustomCompiler.pdb

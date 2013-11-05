@@ -1,0 +1,5 @@
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\bin\Release\csFiddle.Interfaces.dll
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\bin\Release\csFiddle.Interfaces.pdb
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\obj\Release\csFiddle.Interfaces.csprojResolveAssemblyReference.cache
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\obj\Release\csFiddle.Interfaces.dll
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\obj\Release\csFiddle.Interfaces.pdb

@@ -8,3 +8,8 @@ C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\bin\Debug
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.dll
 C:\Users\e78590\Documents\GitHub\csFiddle\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.pdb
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\bin\Debug\csFiddle.Interfaces.dll
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\bin\Debug\csFiddle.Interfaces.pdb
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.csprojResolveAssemblyReference.cache
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.dll
+C:\Git\csFid\csFiddle\csFiddle.Interfaces\obj\Debug\csFiddle.Interfaces.pdb
