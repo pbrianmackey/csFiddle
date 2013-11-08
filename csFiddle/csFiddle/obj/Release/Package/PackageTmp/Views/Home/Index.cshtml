@@ -16,6 +16,7 @@
             });
 
         $('button').button();
+        $('#saveBtn').button();
         
         $('#compiler').click(function () {
             var code = '=' + $('#userCode').val();
@@ -35,6 +36,8 @@
                 $(this).addClass("done");
             });
         });
+        
+        
     });
 </script>
 
@@ -50,20 +53,26 @@
         </div>
     </section>
 }
-<div id="output"></div>
-<button id="compiler">Compile</button>
 
-<textarea id="userCode">
-using System;
- 
-namespace HelloWorld
+    <div id="output"></div>
+    <button id="compiler">Compile</button>
+
+@using(Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    class Program
+
+    <input type="submit" id="saveBtn" value="Save" />
+    <textarea id="userCode" name="userCode">
+    using System;
+ 
+    namespace HelloWorld
     {
-        static void Main(string[] args)
+        class Program
         {
-            Console.WriteLine("Hello, World!");            
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Hello, World!");            
+            }
         }
     }
+    </textarea>
 }
-</textarea>

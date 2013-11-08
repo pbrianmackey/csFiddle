@@ -1,0 +1,74 @@
+﻿@model csFiddle.Models.Code
+@{
+    ViewBag.Title = "Edit";
+}
+
+<script>
+    $(function () {
+        $('textarea')
+            .css({
+                'font': 'inherit',
+                'color': 'inherit',
+                'text-align': 'inherit',
+                'outline': 'none',
+                'cursor': 'text',
+                'width': '72em',
+                'height': '50em'
+            });
+
+        $('button').button();
+        
+        var urlprefix = $('#websitePath').data('websitepath');
+        urlprefix = urlprefix.replace(/\/$/, "");
+        var url = urlprefix + '/api/codeprocessor';        
+        
+        $('#compiler').click(function () {
+            var code = '=' + $('#userCode').val();
+
+            $.ajax({
+                url: url,
+                context: document.body,
+                type: "POST",
+                data: code,
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            }).done(function (result) {
+                //alert('done');
+                $('#output').html('Result: ' + result);
+                $(this).addClass("done");
+            });
+        });
+        
+    });
+</script>
+
+<h2>Edit</h2>
+<div id="websitePath" data-websitePath='@Request.Url.GetLeftPart(System.UriPartial.Authority)@Request.ApplicationPath'></div>
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>csFiddle</h1>
+            </hgroup>
+            <p>
+                Quickly share and tinker with C#.  <br /><i>Powered by <a href="http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx">Roslyn. </a> BETA:  please contact smacky311 [at] yahoo [dot] com with questions/issues.</i>
+            </p>
+        </div>
+    </section>
+}
+
+<div id="output"></div>
+<button id="compiler">Compile</button>
+
+@using (Html.BeginForm("Update", "Home", FormMethod.Post, new {enctype = "multipart/form-data"}))
+{    
+    <input type="text" name="id" value="@Model.id" style="visibility: hidden;"/>
+    <input type="submit" value="Update" />
+
+    <textarea id="userCode" name="userCode">
+        @Model.code1    
+    </textarea>
+}

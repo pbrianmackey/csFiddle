@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="csFiddlerModelStoreContainer" CdmEntityContainer="csFiddlerEntities">
+    <EntitySetMapping Name="Codes">
+      <EntityTypeMapping TypeName="csFiddlerModel.Code">
+        <MappingFragment StoreEntitySet="Code">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code1" ColumnName="code" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
