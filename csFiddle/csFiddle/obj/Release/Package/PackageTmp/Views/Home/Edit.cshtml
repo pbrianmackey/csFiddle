@@ -17,11 +17,9 @@
             });
 
         $('button').button();
-        
-        var urlprefix = $('#websitePath').data('websitepath');
-        urlprefix = urlprefix.replace(/\/$/, "");
-        var url = urlprefix + '/api/codeprocessor';        
-        
+
+        var url = getPrefix() + '/api/codeprocessor';
+
         $('#compiler').click(function () {
             var code = '=' + $('#userCode').val();
 
@@ -40,35 +38,42 @@
                 $(this).addClass("done");
             });
         });
-        
+
+        loadShare();
+
     });
+
+    function getPrefix() {
+        var urlprefix = $('#websitePath').data('websitepath');
+        urlprefix = urlprefix.replace(/\/$/, "");
+        return urlprefix;
+    }
+
+    function loadShare() {
+        var prefix = getPrefix();
+        $('#shareInput').val(prefix + $('#shareInput').val());
+    }
 </script>
 
 <h2>Edit</h2>
 <div id="websitePath" data-websitePath='@Request.Url.GetLeftPart(System.UriPartial.Authority)@Request.ApplicationPath'></div>
-
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>csFiddle</h1>
-            </hgroup>
-            <p>
-                Quickly share and tinker with C#.  <br /><i>Powered by <a href="http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx">Roslyn. </a> BETA:  please contact smacky311 [at] yahoo [dot] com with questions/issues.</i>
-            </p>
-        </div>
-    </section>
-}
+<table>
+    <tr style="width: 100%;">
+        <td>Share</td>
+        <td style="width: 100%;">
+            <input style="width: 100%;" id="shareInput" type="text" value="@Url.Action("Edit", new { id = Model.id, version = Model.version })"/></td>
+    </tr>
+</table>
 
 <div id="output"></div>
-<button id="compiler">Compile</button>
+<button id="compiler">Compile and Run</button>
 
-@using (Html.BeginForm("Update", "Home", FormMethod.Post, new {enctype = "multipart/form-data"}))
-{    
-    <input type="text" name="id" value="@Model.id" style="visibility: hidden;"/>
-    <input type="submit" value="Update" />
-
-    <textarea id="userCode" name="userCode">
-        @Model.code1    
-    </textarea>
+@using (Html.BeginForm("Update", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{        
+    <input type="submit" value="Update" />    
+    @Html.TextAreaFor(m => m.userCode)    
+    <div style="visibility: hidden;">
+        @Html.TextBoxFor(m => m.id)
+        @Html.TextBoxFor(m => m.version)
+    </div>
 }

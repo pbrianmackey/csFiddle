@@ -15,8 +15,14 @@ namespace csFiddle
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{id}/{version}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, version = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Edit",
+                url: "Home/EditVersion/{id}/{version}",
+                defaults: new { id = UrlParameter.Optional, version = UrlParameter.Optional }
             );
         }
     }

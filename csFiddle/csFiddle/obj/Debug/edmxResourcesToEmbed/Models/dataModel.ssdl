@@ -8,9 +8,11 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="code" Type="nvarchar(max)" Nullable="false" />
     <Property Name="version" Type="int" Nullable="false" />
     <Property Name="CreateDate" Type="datetime" />
     <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="parentId" Type="uniqueidentifier" />
+    <Property Name="userCode" Type="nvarchar(max)" />
+    <Property Name="latest" Type="bit" Nullable="false" />
   </EntityType>
 </Schema>

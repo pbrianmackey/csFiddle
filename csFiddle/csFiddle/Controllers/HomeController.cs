@@ -1,6 +1,7 @@
 ﻿using csFiddle.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -19,24 +20,27 @@ namespace csFiddle.Controllers
         [HttpPost]
         public ActionResult Index(string userCode)
         {
-            var code = new Code();
-            code.id = Guid.NewGuid();
-            code.code1 = userCode;
-            code.version = 1;
-            code.CreateDate = DateTime.Now;
+            var rootNode = new Code();
+            rootNode.id = Guid.NewGuid();
+            rootNode.userCode = userCode;
+            rootNode.version = 0;
+            rootNode.CreateDate = DateTime.Now;
+            rootNode.latest = false;
+            context.Codes.Add(rootNode);            
 
-            context.Codes.Add(code);
-            context.SaveChanges();
+            var editNode = CreateEditNode(rootNode.id, userCode, rootNode);
 
-            return RedirectToAction("Edit", "Home", new {id = code.id});
+            Save();
+            
+
+            return RedirectToAction("EditVersion", "Home", new { id = editNode.id, version = editNode.version });
         }
 
         public ActionResult EditVersion(Guid id, int version)
         {
             var result = context.Codes.SingleOrDefault(c => c.id == id && c.version == version);
             if (result == null)
-            {
-                
+            {                
                 string errorMessage = string.Format("Code not found for id {0} and version {1}", id, version);                
                 ViewBag.Message = errorMessage;
                 return RedirectToAction("Error", "Home");
@@ -53,7 +57,7 @@ namespace csFiddle.Controllers
             if (result == null)
             {                
                 result = new Code();
-                result.code1 = string.Format("Code not found for id {0}", id);
+                result.userCode = string.Format("Code not found for id {0}", id);
                 return View(result);
             }
             else
@@ -63,10 +67,10 @@ namespace csFiddle.Controllers
         }
 
         [HttpPost]
-        public ActionResult Update(Guid id, string userCode)
+        public ActionResult Update(Guid id, int version, string userCode)
         {
-            var result = context.Codes.SingleOrDefault(c => c.id == id);
-            if (result == null)
+            var oldVersion = context.Codes.SingleOrDefault(c => c.id == id && c.version == version);
+            if (oldVersion == null)
             {                                
                 string errorMessage = string.Format("Code not found for id {0}", id);
                 ViewBag.Message = errorMessage;
@@ -74,11 +78,53 @@ namespace csFiddle.Controllers
             }
             else
             {
-                result.version++;
-                result.code1 = userCode;
-                context.SaveChanges();
-                return RedirectToAction("Edit", "Home", new { id = result.id, version = result.version });   
+                var result = CreateEditNode((Guid)oldVersion.parentId, userCode, oldVersion);                
+                Save();
+                return RedirectToAction("EditVersion", "Home", new { id = result.id, version = result.version });   
             }              
+        }
+
+        public ActionResult List()
+        {            
+            List<Code> result = context.Codes.Where(c => c.latest).OrderBy(c => c.CreateDate).ToList();
+            return View(result);
+        }
+
+        private Code CreateEditNode(Guid parentId, string userCode, Code oldVersion)
+        {
+            var editNode = new Code();
+            editNode.id = Guid.NewGuid();
+            editNode.userCode = userCode;
+            editNode.version = oldVersion.version + 1;
+            editNode.CreateDate = DateTime.Now;
+            editNode.parentId = parentId;
+            editNode.latest = true;
+            oldVersion.latest = false;
+
+            context.Codes.Add(editNode);
+
+            return editNode;
+        }
+
+        private void Save()
+        {
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+            }
         }
 
         protected override void Dispose(bool disposing)

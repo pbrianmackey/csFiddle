@@ -4,8 +4,10 @@
     <EntitySetMapping Name="Codes">
       <EntityTypeMapping TypeName="csFiddlerModel.Code">
         <MappingFragment StoreEntitySet="Code">
+          <ScalarProperty Name="latest" ColumnName="latest" />
+          <ScalarProperty Name="userCode" ColumnName="userCode" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="code1" ColumnName="code" />
           <ScalarProperty Name="version" ColumnName="version" />
           <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
           <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="csFiddlerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="csFiddlerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="csFiddlerModelStoreContainer">
           <EntitySet Name="Code" EntityType="csFiddlerModel.Store.Code" store:Type="Tables" Schema="dbo" />
         </EntityContainer>
@@ -13,13 +13,14 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="uniqueidentifier" Nullable="false" />
-          <Property Name="code" Type="nvarchar(max)" Nullable="false" />
           <Property Name="version" Type="int" Nullable="false" />
           <Property Name="CreateDate" Type="datetime" />
           <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="parentId" Type="uniqueidentifier" />
+          <Property Name="userCode" Type="nvarchar(max)" />
+          <Property Name="latest" Type="bit" Nullable="false" />
         </EntityType>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="csFiddlerModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -31,10 +32,12 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Guid" Nullable="false" />
-          <Property Name="code1" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="version" Type="Int32" Nullable="false" />
           <Property Name="CreateDate" Type="DateTime" Precision="3" />
           <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Type="Guid" Name="parentId" />
+          <Property Type="String" Name="userCode" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="latest" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -45,8 +48,10 @@
           <EntitySetMapping Name="Codes">
             <EntityTypeMapping TypeName="csFiddlerModel.Code">
               <MappingFragment StoreEntitySet="Code">
+                <ScalarProperty Name="latest" ColumnName="latest" />
+                <ScalarProperty Name="userCode" ColumnName="userCode" />
+                <ScalarProperty Name="parentId" ColumnName="parentId" />
                 <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="code1" ColumnName="code" />
                 <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
                 <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />

@@ -15,9 +15,11 @@ namespace csFiddle.Models
     public partial class Code
     {
         public System.Guid id { get; set; }
-        public string code1 { get; set; }
         public int version { get; set; }
         public Nullable<System.DateTime> CreateDate { get; set; }
         public Nullable<System.DateTime> UpdateDate { get; set; }
+        public Nullable<System.Guid> parentId { get; set; }
+        public string userCode { get; set; }
+        public bool latest { get; set; }
     }
 }

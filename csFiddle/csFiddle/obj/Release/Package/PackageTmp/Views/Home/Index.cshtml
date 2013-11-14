@@ -41,21 +41,8 @@
     });
 </script>
 
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>csFiddle</h1>
-            </hgroup>
-            <p>
-                Quickly share and tinker with C#.  <br /><i>Powered by <a href="http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx">Roslyn. </a> BETA:  please contact smacky311 [at] yahoo [dot] com with questions/issues.</i>
-            </p>
-        </div>
-    </section>
-}
-
     <div id="output"></div>
-    <button id="compiler">Compile</button>
+    <button id="compiler">Compile and Run</button>
 
 @using(Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {

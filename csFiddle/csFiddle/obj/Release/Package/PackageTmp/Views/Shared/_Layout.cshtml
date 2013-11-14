@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - csFiddle</title>
+        <title>@ViewBag.Title - CS Fiddler</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />        
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />        
@@ -23,14 +23,27 @@
                 <div class="float-right">
                     <nav>
                         <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                           @* <li>@Html.ActionLink("Documentation", "Index", "Documentation")</li>*@
+                            <li>@Html.ActionLink("CS Fiddler", "Index", "Home")</li>
+                            <li>@Html.ActionLink("List Fiddlers", "List", "Home")</li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
+
         <div id="body">
+            
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>CS Fiddler</h1>
+            </hgroup>
+            <p>
+                Quickly share and tinker with C#.  <br /><i>Powered by <a href="http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx">Roslyn. </a> BETA:  please contact smacky311 [at] yahoo [dot] com with questions/issues.</i>
+            </p>
+        </div>
+    </section>
+
             @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()

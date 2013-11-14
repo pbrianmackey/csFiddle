@@ -8,9 +8,11 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Guid" Nullable="false" />
-    <Property Name="code1" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="version" Type="Int32" Nullable="false" />
     <Property Name="CreateDate" Type="DateTime" Precision="3" />
     <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Type="Guid" Name="parentId" />
+    <Property Type="String" Name="userCode" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="latest" Nullable="false" />
   </EntityType>
 </Schema>

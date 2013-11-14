@@ -1,0 +1,20 @@
+﻿@model List<csFiddle.Models.Code>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>Create Date</th>        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(item.id.ToString(), "Edit", new { id = item.id, version = item.version })</td>
+            <td>@item.CreateDate</td>                    
+        </tr>        
+    }
+</table>

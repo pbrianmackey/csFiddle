@@ -1,2 +1,8 @@
-﻿Consider implementing Roslyn when it's released: http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx
+﻿TODO:
 
+- Plugin Google federated login (single sign on) - https://developers.google.com/accounts/docs/OpenID
+
+
+Publishing Reference:
+- Remove pass from web.config
+- 

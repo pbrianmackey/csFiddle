@@ -345,6 +345,7 @@
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\Home\Update.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Views\Home\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
