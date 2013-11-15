@@ -4,5 +4,10 @@
 
 
 Publishing Reference:
+
 - Remove pass from web.config
-- 
+- cd C:\Git\csFid
+- git add *
+- git commit -m "checkin notes"
+- git push -u origin master
+- login

@@ -61,7 +61,7 @@
     <tr style="width: 100%;">
         <td>Share</td>
         <td style="width: 100%;">
-            <input style="width: 100%;" id="shareInput" type="text" value="@Url.Action("Edit", new { id = Model.id, version = Model.version })"/></td>
+            <input style="width: 100%;" id="shareInput" type="text" value="@Url.Action("Edit", new { Model.parentId, Model.version })"/></td>
     </tr>
 </table>
 
@@ -74,6 +74,7 @@
     @Html.TextAreaFor(m => m.userCode)    
     <div style="visibility: hidden;">
         @Html.TextBoxFor(m => m.id)
+        @Html.TextBoxFor(m => m.parentId)
         @Html.TextBoxFor(m => m.version)
     </div>
 }

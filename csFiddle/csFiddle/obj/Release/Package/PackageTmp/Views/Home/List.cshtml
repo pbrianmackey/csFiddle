@@ -13,7 +13,7 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@Html.ActionLink(item.id.ToString(), "Edit", new { id = item.id, version = item.version })</td>
+            <td>@Html.ActionLink(item.id.ToString(), "Edit", new { item.parentId, item.version })</td>
             <td>@item.CreateDate</td>                    
         </tr>        
     }
